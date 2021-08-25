@@ -465,7 +465,7 @@
             
             $(".flt_btn_music").click(function() {
                 $("#soundcloud_div").toggle();
-                alert("soundcloud_div is toggled");
+                alert("soundcloud_div is toggled ");
               });
 
         });
