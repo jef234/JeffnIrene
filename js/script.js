@@ -461,9 +461,11 @@
             };
 
             $("#soundcloud_div").toggle();
+            alert("soundcloud_div is hidden");
             
             $(".flt_btn_music").click(function() {
                 $("#soundcloud_div").toggle();
+                alert("soundcloud_div is toggled");
               });
 
         });
