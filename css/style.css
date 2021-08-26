@@ -1970,6 +1970,12 @@ footer .copyright {
   top: 2px;
 }
 
+.events .main-ceromony ul li a,
+.events .reception ul li a,
+.events .bachalor-party ul li a {
+  color: #aa9a45;
+}
+
 .events .map {
   height: 566px;
   border: 6px solid #e6e6e6;
