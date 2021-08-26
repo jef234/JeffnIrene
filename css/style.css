@@ -1979,18 +1979,30 @@ footer .copyright {
 .events .map {
   height: 555px;
   border: 6px solid #e6e6e6;
+  overflow: hidden;
+  position: relative
 }
 
 @media (max-width: 991px) {
   .events .map {
     margin-top: 50px;
+    overflow: hidden;
+    position: relative
   }
 }
 
 @media (max-width: 767px) {
   .events .map {
     height: 465px;
+    overflow: hidden;
+    position: relative
   }
+}
+
+#mapiframe {
+  height: 110%;
+  position: absolute;
+  top: -10%;
 }
 
 /*--------------------------------------------------------------
