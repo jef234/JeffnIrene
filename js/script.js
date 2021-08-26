@@ -456,10 +456,7 @@
 
             masonryGridSetting();
 
-           
-
             $("#soundcloud_div").toggle();
-            
             $(".flt_btn_music").click(function() {
                 $("#soundcloud_div").toggle();
             });
