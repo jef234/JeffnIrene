@@ -461,9 +461,9 @@
                 $("#soundcloud_div").toggle();
             });
 
-            if ($(".map").length) {
-                map();
-            };
+            // if ($(".map").length) {
+            //     map();
+            // };
 
         });
 
