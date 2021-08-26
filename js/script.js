@@ -456,25 +456,17 @@
 
             masonryGridSetting();
 
-            // if ($(".map").length) {
-            //     map();
-            // };
+           
 
             $("#soundcloud_div").toggle();
-            alert("soundcloud_div is hidden");
             
             $(".flt_btn_music").click(function() {
                 $("#soundcloud_div").toggle();
-                alert("soundcloud_div is toggled");
             });
-            // $(".flt_btn_music").on("touchstart", function(){
-            //     $("#soundcloud_div").toggle();
-            //     alert("soundcloud_div is toggled");
-            // });
-            // $(".flt_btn_music").on("touchend", function(){
-            //     $("#soundcloud_div").toggle();
-            //     alert("soundcloud_div is toggled");
-            // });
+
+            if ($(".map").length) {
+                map();
+            };
 
         });
 
