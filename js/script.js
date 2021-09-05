@@ -445,12 +445,12 @@
         Bridesmaids and Groomsmen profile workaround
     ==========================================================================*/
 
-    $(".bridesmaids-slider > .owl-controls > .owl-nav > .owl-prev").on("click", function() {
+    $(".bridesmaids-slider .owl-controls .owl-nav .owl-prev").on("click", function() {
         $("#shiny_photo").toggle();
         return false;
     });
-    
-    $(".bridesmaids-slider > .owl-controls > .owl-nav > .owl-next").on("click", function() {
+
+    $(".bridesmaids-slider .owl-controls .owl-nav .owl-next").on("click", function() {
         $("#shiny_photo").toggle();
         return false;
     });
