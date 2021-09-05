@@ -2758,3 +2758,14 @@ footer .copyright {
 	/* background-color:#aa9a45;
 	color:#FFF; */
 }
+
+
+.parents {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+  .parents {
+    margin-bottom: 40px;
+  }
+}
