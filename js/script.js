@@ -348,98 +348,112 @@
     /*------------------------------------------
         = GOOGLE MAP
     -------------------------------------------*/  
-    function map() {
+    // function map() {
 
-        var locations = [
-            ['Hotel royal international khulna ', 22.8103888, 89.5619609,1],
-            ['City inn khulna', 22.820884, 89.551216,2],
-        ];
+    //     var locations = [
+    //         ['Hotel royal international khulna ', 22.8103888, 89.5619609,1],
+    //         ['City inn khulna', 22.820884, 89.551216,2],
+    //     ];
 
-        var map = new google.maps.Map(document.getElementById('map'), {
-            center: new google.maps.LatLng( 22.8103888, 89.5619609),
-            zoom: 12,
-            scrollwheel: false,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
+    //     var map = new google.maps.Map(document.getElementById('map'), {
+    //         center: new google.maps.LatLng( 22.8103888, 89.5619609),
+    //         zoom: 12,
+    //         scrollwheel: false,
+    //         mapTypeId: google.maps.MapTypeId.ROADMAP
 
-        });
+    //     });
 
-        var infowindow = new google.maps.InfoWindow();
+    //     var infowindow = new google.maps.InfoWindow();
 
-        var marker, i;
+    //     var marker, i;
 
-        for (i = 0; i < locations.length; i++) {  
-                marker = new google.maps.Marker({
-                position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-                map: map,
-                icon:'images/map-marker.png'
-            });
+    //     for (i = 0; i < locations.length; i++) {  
+    //             marker = new google.maps.Marker({
+    //             position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+    //             map: map,
+    //             icon:'images/map-marker.png'
+    //         });
 
-            google.maps.event.addListener(marker, 'click', (function(marker, i) {
-                return function() {
-                    infowindow.setContent(locations[i][0]);
-                    infowindow.open(map, marker);
-                }
-            })(marker, i));
-        }
-    }; 
+    //         google.maps.event.addListener(marker, 'click', (function(marker, i) {
+    //             return function() {
+    //                 infowindow.setContent(locations[i][0]);
+    //                 infowindow.open(map, marker);
+    //             }
+    //         })(marker, i));
+    //     }
+    // }; 
 
 
     /*------------------------------------------
         = RSVP FORM SUBMISSION
     -------------------------------------------*/  
-    if ($("#rsvp-form").length) {
-        $("#rsvp-form").validate({
-            rules: {
-                name: {
-                    required: true,
-                    minlength: 2
-                },
-                email: "required",
+    // if ($("#rsvp-form").length) {
+    //     $("#rsvp-form").validate({
+    //         rules: {
+    //             name: {
+    //                 required: true,
+    //                 minlength: 2
+    //             },
+    //             email: "required",
                 
-                guest: {
-                    required: true
-                },
+    //             guest: {
+    //                 required: true
+    //             },
                 
-                events: {
-                    required: true
-                }
+    //             events: {
+    //                 required: true
+    //             }
 
-            },
+    //         },
 
-            messages: {
-                name: "Please enter your name",
-                email: "Please enter your email",
-                guest: "Select your number of guest",
-                events: "Select your event list"
-            },
+    //         messages: {
+    //             name: "Please enter your name",
+    //             email: "Please enter your email",
+    //             guest: "Select your number of guest",
+    //             events: "Select your event list"
+    //         },
 
-            submitHandler: function (form) {
-                $("#loader").css("display", "inline-block");
-                $.ajax({
-                    type: "POST",
-                    url: "mail.php",
-                    data: $(form).serialize(),
-                    success: function () {
-                        $( "#loader").hide();
-                        $( "#success").slideDown( "slow" );
-                        setTimeout(function() {
-                        $( "#success").slideUp( "slow" );
-                        }, 3000);
-                        form.reset();
-                    },
-                    error: function() {
-                        $( "#loader").hide();
-                        $( "#error").slideDown( "slow" );
-                        setTimeout(function() {
-                        $( "#error").slideUp( "slow" );
-                        }, 3000);
-                    }
-                });
-                return false; // required to block normal submit since you used ajax
-            }
+    //         submitHandler: function (form) {
+    //             $("#loader").css("display", "inline-block");
+    //             $.ajax({
+    //                 type: "POST",
+    //                 url: "mail.php",
+    //                 data: $(form).serialize(),
+    //                 success: function () {
+    //                     $( "#loader").hide();
+    //                     $( "#success").slideDown( "slow" );
+    //                     setTimeout(function() {
+    //                     $( "#success").slideUp( "slow" );
+    //                     }, 3000);
+    //                     form.reset();
+    //                 },
+    //                 error: function() {
+    //                     $( "#loader").hide();
+    //                     $( "#error").slideDown( "slow" );
+    //                     setTimeout(function() {
+    //                     $( "#error").slideUp( "slow" );
+    //                     }, 3000);
+    //                 }
+    //             });
+    //             return false; // required to block normal submit since you used ajax
+    //         }
 
-        });
-    }
+    //     });
+    // }
+
+    /*==========================================================================
+        Bridesmaids and Groomsmen profile workaround
+    ==========================================================================*/
+
+    $(".bridesmaids-slider > .owl-controls > .owl-nav > .owl-prev").on("click", function() {
+        $("#shiny_photo").toggle();
+        return false;
+    });
+    
+    $(".bridesmaids-slider > .owl-controls > .owl-nav > .owl-next").on("click", function() {
+        $("#shiny_photo").toggle();
+        return false;
+    });
 
 
     /*==========================================================================
