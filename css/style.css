@@ -2761,17 +2761,12 @@ footer .copyright {
 	color:#FFF; */
 }
 
-.parents {
+.bottom-margins {
   margin-bottom: 60px;
 }
 
 @media (max-width: 767px) {
-  .parents {
+  .bottom-margins {
     margin-bottom: 40px;
   }
-}
-
-.bridesmaids-slider .item,
-.groomsmen-slider .item{
-  margin: 0px 16px 0px 0px;
 }
