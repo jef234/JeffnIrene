@@ -325,15 +325,26 @@
                     </div>
 
                     <div class="col col-md-6">
-                        <div id="map" class="map" >
-                            <iframe id=mapiframe src="https://www.google.com/maps/d/u/0/embed?mid=1a6WSMu4ChrOBowqGOK0zKASoYXKB-nZG" height="100%" width="100%" style="border:0px;" frameborder="0"></iframe>
+                        <!-- Nav tabs -->
+                        <ul id="tabs" class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#map_tab" aria-controls="home" role="tab" data-toggle="tab">Map</a></li>
+                            <li role="presentation"><a href="#liveStream_tab" aria-controls="profile" role="tab" data-toggle="tab">Live Stream</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active fade in" id="map_tab">
+                                <div class="map" >
+                                    <iframe id=mapiframe src="https://www.google.com/maps/d/u/0/embed?mid=1a6WSMu4ChrOBowqGOK0zKASoYXKB-nZG" height="100%" width="100%" style="border:0px;" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="liveStream_tab">
+                                <div class="map" >
+                                    <iframe src="https://www.liveibc.com/irenewedsjeffrey/new.html" name="www.liveibc.com" frameborder="0" height="100%" width="100%" scrolling="no" hspace="0" vspace="0" marginheight="0" marginwidth="0" allowTransparency="true" allowfullscreen>You need a iFrames Capable browser to view this content.</iframe>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <!-- <div class="col col-md-6">
-                        <div id="map" class="map" >
-                            <iframe src="https://www.liveibc.com/irenewedsjeffrey/new.html" name="www.liveibc.com" frameborder="0" height="100%" width="100%" scrolling="no" hspace="0" vspace="0" marginheight="0" marginwidth="0" allowTransparency="true" allowfullscreen>You need a iFrames Capable browser to view this content.</iframe>
-                        </div>
-                    </div>  -->
+                    </div>                    
                 </div>
             </div> <!-- end of container -->
         </section>
@@ -1111,7 +1122,6 @@
                     <a href="https://soundcloud.com/jeffrey-758358351/sets/wedding" title="Wedding" target="_blank"
                         style="color: #cccccc; text-decoration: none;">Wedding</a>
                 </div>
-                <!-- <iframe style="position: absolute;width:0;height:0;border:0;" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F134815445?color=ff5500&amp;auto_play=true&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe> -->
             </div>
             <button class="flt_btn_music btn btn-lg">
                 <i class="fa fa-music"></i>
@@ -1130,7 +1140,6 @@
 
     <!-- Plugins for this template -->
     <script src="js/jquery-plugin-collection.js"></script>
-    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAl-EDTJ5_uU3zBIX7-wNTu-qSZr1DO5Dw"></script>
 
     <!-- Custom script for this template -->
     <script src="js/script.js"></script>

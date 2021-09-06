@@ -1977,7 +1977,7 @@ footer .copyright {
 }
 
 .events .map {
-  height: 555px;
+  height: 505px;
   border: 6px solid #e6e6e6;
   overflow: hidden;
   position: relative
@@ -1993,7 +1993,7 @@ footer .copyright {
 
 @media (max-width: 767px) {
   .events .map {
-    height: 465px;
+    height: 455px;
     overflow: hidden;
     position: relative
   }
@@ -2003,6 +2003,16 @@ footer .copyright {
   height: 110%;
   position: absolute;
   top: -10%;
+}
+
+@media (max-width: 991px) {
+  .map {
+    margin-top: 0px !important;
+  }
+
+  #tabs{
+    margin-top: 50px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -2774,4 +2784,26 @@ footer .copyright {
 .bride-slider .item,
 .groomsmen-slider .item{
   margin: 0px 17px 0px 0px;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  color: #aa9a45;
+  font-weight: 500;
+  background-color: #f2f2f2;
+  border-width: 3px 3px 0px 3px;
+  border-color: #e6e6e6;
+}
+
+a,a:hover {
+  font-weight: 500;
+  color: #aa9a45;
+}
+
+.nav-tabs>li>a,.nav-tabs>li>a:focus, .nav-tabs>li>a:hover {
+  border-width: 1px 1px 0px 1px;
+  border-color: #e6e6e6;
+}
+
+.nav-tabs>li>a:hover {
+  font-weight: bolder;
 }
