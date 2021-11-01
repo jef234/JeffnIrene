@@ -208,13 +208,22 @@
         = BIGDAY COUNTDOWN
     -------------------------------------------*/
     if ($("#clock").length) {
-        $('#clock').countdown('2021/09/29', function(event) {
-            var $this = $(this).html(event.strftime(''
-            + '<div class="box"><div>%D</div> <span>Days</span> </div>'
-            + '<div class="box"><div>%H</div> <span>Hours</span> </div>'
-            + '<div class="box"><div>%M</div> <span>Minutes</span> </div>'
-            + '<div class="box"><div>%S</div> <span>Seconds</span> </div>'));
-        });
+        // $('#clock').countdown('2021/09/29', function(event) {
+        //     var $this = $(this).html(event.strftime(''
+        //     + '<div class="box"><div>%D</div> <span>Days</span> </div>'
+        //     + '<div class="box"><div>%H</div> <span>Hours</span> </div>'
+        //     + '<div class="box"><div>%M</div> <span>Minutes</span> </div>'
+        //     + '<div class="box"><div>%S</div> <span>Seconds</span> </div>'));
+        // });
+        $('#clock')
+            .countdown('2021/09/29 16:30:00', {elapse: true})
+            .on('update.countdown', function(event) {
+                var $this = $(this).html(event.strftime(''
+                    + '<div class="box"><div>%D</div> <span>Days</span> </div>'
+                    + '<div class="box"><div>%H</div> <span>Hours</span> </div>'
+                    + '<div class="box"><div>%M</div> <span>Minutes</span> </div>'
+                    + '<div class="box"><div>%S</div> <span>Seconds</span> </div>'));
+            });
     }
 
 
