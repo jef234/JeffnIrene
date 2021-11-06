@@ -1983,11 +1983,25 @@ footer .copyright {
   position: relative
 }
 
+.vid{
+  height: 318px !important;
+}
+
+@media (max-width: 1024px) {
+  .vid{
+    height: 261px !important;
+  }
+}
+
 @media (max-width: 991px) {
   .events .map {
     margin-top: 50px;
     overflow: hidden;
     position: relative
+  }
+
+  .vid{
+    height: 410px !important;
   }
 }
 
@@ -1996,6 +2010,10 @@ footer .copyright {
     height: 455px;
     overflow: hidden;
     position: relative
+  }
+
+  .vid{
+    height: 192px !important;
   }
 }
 
@@ -2797,6 +2815,9 @@ footer .copyright {
 a,a:hover {
   font-weight: 500;
   color: #aa9a45;
+}
+.nav>li>a{
+  padding: 6px 7px;
 }
 
 .nav-tabs>li>a,.nav-tabs>li>a:focus, .nav-tabs>li>a:hover {
