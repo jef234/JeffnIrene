@@ -2863,18 +2863,12 @@ a,a:hover {
 }
 
 .reception_nav li{
-  margin-top: 1em;
-}
-
-.reception_nav li{
   list-style: none;
 }
 
-.reception_nav>li.active>a, .reception_nav>li.active>a:focus, .reception_nav>li.active>a:hover{
+.reception_nav>li.active>a, 
+.reception_nav>li.active>a:focus, 
+.reception_nav>li.active>a:hover{
   color: #FFF !important;
   background-color: #aa9a45 !important;
-}
-
-.reception_nav li a:visited, .reception_nav li a:active, .reception_nav li a:link{
-  color: #aa9a45;
 }
