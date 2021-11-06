@@ -2852,9 +2852,6 @@ a,a:hover {
   font-weight: 500;
   color: #aa9a45;
 }
-.nav>li>a{
-  padding: 6px 7px;
-}
 
 .nav-tabs>li>a,.nav-tabs>li>a:focus, .nav-tabs>li>a:hover {
   border-width: 1px 1px 0px 1px;
@@ -2863,4 +2860,21 @@ a,a:hover {
 
 .nav-tabs>li>a:hover {
   font-weight: bolder;
+}
+
+.reception_nav li{
+  margin-top: 1em;
+}
+
+.reception_nav li{
+  list-style: none;
+}
+
+.reception_nav>li.active>a, .reception_nav>li.active>a:focus, .reception_nav>li.active>a:hover{
+  color: #FFF !important;
+  background-color: #aa9a45 !important;
+}
+
+.reception_nav li a:visited, .reception_nav li a:active, .reception_nav li a:link{
+  color: #aa9a45;
 }
