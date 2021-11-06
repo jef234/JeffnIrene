@@ -2013,7 +2013,43 @@ footer .copyright {
   }
 
   .vid{
+    height: 410px !important;
+  }
+}
+
+@media (max-width: 540px) {
+  .vid{
+    height: 292px !important;
+  }
+}
+
+@media (max-width: 414px) {
+  .vid{
+    height: 222px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .vid{
+    height: 200px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .vid{
     height: 192px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .vid{
+    height: 169px !important;
+  }
+}
+
+@media (max-width: 280px) {
+  .vid{
+    height: 146px !important;
   }
 }
 
